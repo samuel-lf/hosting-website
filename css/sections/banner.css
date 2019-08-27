@@ -1,0 +1,65 @@
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.banner .spotlight-image {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+.banner .box-text .title {
+    color: #fff;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.banner .box-text .sub-title {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.375rem;
+}
+
+.banner .box-text .sub-title strong {
+    text-transform: uppercase;
+}
+
+.banner .box-text .small-print {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.125rem;
+}
+
+.banner .box-text {
+    max-width: 500px;
+    justify-self: center;
+}
+
+@media only screen and (max-width: 710px) {
+    .banner {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .banner .box-text .title {
+        font-size: 2rem;
+    }
+
+    .banner .box-text .sub-title {
+        font-size: 1.125rem;
+    }
+
+    .banner .box-text .small-print {
+        font-size: 1rem;
+    }
+
+    .banner .spotlight-image {
+        margin-top: 1rem;
+    }
+}

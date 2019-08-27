@@ -1,0 +1,88 @@
+.container-plans{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 15px;
+}
+
+.card-plan{
+    border-radius: 3px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.1);
+    margin: 0;
+    width: 100%;
+    height: 456px;
+    display: grid;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.card-plan .title{
+    align-self: end;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    font-weight: normal;
+}
+
+.card-plan .description,
+.card-plan .start{
+    text-align: center;
+    max-width: 400px;
+    justify-self: center;
+}
+
+.card-plan .start{
+    align-self: end;
+}
+
+.card-plan .price{
+    font-size: 1.75rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: normal;
+}
+
+.card-plan .btn-buy{
+    justify-self: center;
+    border: 1px solid var(--secondary-color);
+    line-height: 1px;
+    border-radius: 4px;
+    width: 150px;
+    height: 40px;
+    text-transform: capitalize;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.card-plan:hover{
+    color: #fff;
+    background-color: var(--primary-color);
+    transition: all .5s;
+}
+
+.card-plan:hover .price{
+    color: #fff;
+}
+
+.card-plan:hover .btn-buy{
+    color: #fff;
+    background-color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 1049px){
+    .container-plans{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 710px){
+    .container-plans{
+        grid-template-columns: 1fr;        
+    }
+    .card-plan{
+        max-width: 560px;
+    }
+}

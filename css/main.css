@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap");
+@import "/css/sections/navbar.css";
+@import "/css/sections/banner.css";
+@import "/css/sections/general.css";
+@import "/css/sections/card_plan.css";
+@import "/css/sections/card_feature.css";
+@import "/css/sections/contact.css";
+@import "/css/sections/footer.css";
+
+:root{
+    --primary-color: #0264FB;
+    --secondary-color: #FFB03A;
+    --primary-background: #F7F8FB; 
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}

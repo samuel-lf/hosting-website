@@ -1,0 +1,128 @@
+.main-navbar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.main-navbar .logo {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  word-spacing: -5px;
+  color: #fff;
+}
+
+.main-navbar .logo .pointer {
+  color: var(--secondary-color);
+  font-size: 4rem;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-menu ul li {
+  list-style: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.main-menu ul li:last-child {
+  margin-right: 10px;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: .8rem;
+}
+
+.btn-started {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  text-transform: capitalize;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-started:focus {
+  outline: 1px dotted;
+}
+
+.menu-hamburguer {
+  display: none;
+}
+
+
+@media only screen and (max-width: 710px) {
+  .main-menu {
+    display: none;
+  }
+
+  .main-navbar {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .menu-hamburguer {
+    display: block;
+    width: 30px;
+  }
+  
+  .main-menu-absolute{
+    display: none;
+    transition: all .5s
+  }
+
+  .main-menu-absolute.ativo {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--primary-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s
+  }
+
+  .main-menu-absolute.ativo ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .main-menu-absolute.ativo ul li {
+    list-style: none;
+    text-transform: capitalize;
+    padding: .8rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .main-menu-absolute.ativo ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .main-menu-absolute.ativo .btn-started{
+    margin-top: 1rem;
+  }
+
+}
